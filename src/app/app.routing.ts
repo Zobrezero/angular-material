@@ -1,17 +1,15 @@
-import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MaterialComponent } from './material/material.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
-const routes: Routes = [
+const appRoutes: Routes = [
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
   { path: 'homepage', component: HomepageComponent },
   { path: 'material', component: MaterialComponent },
+
+  // otherwise redirect to home
+  { path: '**', redirectTo: '' }
 ];
 
-@NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
-})
-export class AppRoutesModule {}
+export const routes = RouterModule.forRoot(appRoutes);

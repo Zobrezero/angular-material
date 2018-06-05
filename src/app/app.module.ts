@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 
-import { AppRoutesModule } from './app-routes.module';
+import { routes } from './app.routing';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,7 +21,7 @@ import { HomepageComponent } from './homepage/homepage.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    AppRoutesModule,
+    routes,
   ],
   providers: [],
   bootstrap: [

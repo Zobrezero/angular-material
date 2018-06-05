@@ -16,6 +16,7 @@ import {
   MatMenuModule,
   MatIconRegistry,
   MatIconBase,
+  MatCardModule,
 } from '@angular/material';
 
 import { MaterialComponent } from './material.component';
@@ -34,6 +35,7 @@ import { MaterialComponent } from './material.component';
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
+    MatCardModule,
   ],
   exports: [
     // importar dentro del modulo
@@ -46,6 +48,7 @@ import { MaterialComponent } from './material.component';
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
+    MatCardModule,
   ],
 })
 export class MaterialModule { }
